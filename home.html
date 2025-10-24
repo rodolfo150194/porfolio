@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio de Desarrollador Web</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        .typing-effect::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#22D3EE",
+                        "background-light": "#F8FAFC",
+                        "background-dark": "#0F172A",
+                        "background-dark-gradient-end": "#1E293B",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-gradient-to-br dark:from-background-dark dark:to-background-dark-gradient-end font-display text-slate-800 dark:text-slate-200">
+    <div class="relative flex min-h-screen w-full flex-col items-center justify-center p-4">
+        <header class="absolute top-0 right-0 p-6">
+            <div class="flex items-center gap-4">
+                <button
+                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                    id="theme-toggle">
+                    <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:inline">light_mode</span>
+                </button>
+            </div>
+        </header>
+        <main class="flex flex-col items-center text-center max-w-4xl mx-auto">
+            <div class="mb-6">
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-40 border-4 border-white dark:border-slate-700 shadow-lg"
+                    data-alt="Foto profesional del desarrollador"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBikSmkz08_fIVHCkM4G4ky4D6vhnAAHniYJtgG713anFwFYuw3NJWtkLvrwi__Mm7aFX4pMv9P5NY1qYz2h7lCntmpKQ6OTR2Mppvd7O0s0A4AmNF1fxqObci9Z0-d5XmwQ9BbtKqjxidO-6oj330m3A1PK80Zsan5oIIcWnay634pxjPc1_U7bsJUDCAXdL6N6p1vHHbdLT8l4oChdaIulKXdUVa-c1h74JvUqPf-vXZnWdTER7djF6mYuACQNiBcqOtzjNuxyeCZ');">
+                </div>
+            </div>
+            <h1
+                class="text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight text-slate-900 dark:text-white mb-4">
+                <span class="typing-effect">Rodolfo García Maeso</span>
+            </h1>
+            <h2 class="text-xl md:text-2xl font-bold text-primary mb-6">
+                Desarrollador Web Full Backend con Django
+            </h2>
+            <p class="max-w-2xl text-base md:text-lg text-slate-600 dark:text-slate-400 mb-10 px-4">
+                Apasionado por construir aplicaciones web robustas y escalables. Con 5 años de experiencia, me
+                especializo en el ecosistema de Django, creando soluciones eficientes y seguras desde el backend hasta
+                la implementación.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button
+                    class="flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-slate-900 text-base font-bold leading-normal tracking-wide shadow-lg transition-transform hover:scale-105">
+                    <span class="truncate">Descargar CV</span>
+                    <span class="material-symbols-outlined ml-2">download</span>
+                </button>
+                <button
+                    class="flex min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white text-base font-bold leading-normal tracking-wide shadow-lg transition-transform hover:scale-105">
+                    <span class="truncate">Contactar</span>
+                    <span class="material-symbols-outlined ml-2">email</span>
+                </button>
+            </div>
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-8">
+                <div>
+                    <h2
+                        class="text-2xl font-display font-bold text-text-primary-light dark:text-text-primary-dark px-4 pb-3 pt-5">
+                        Habilidades Blandas</h2>
+                    <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 p-4">
+                        <div
+                            class="flex flex-1 gap-4 items-center rounded-lg border border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark p-4 transition-all hover:shadow-md hover:border-primary">
+                            <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+                            <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">
+                                Trabajo en Equipo</h3>
+                        </div>
+                        <div
+                            class="flex flex-1 gap-4 items-center rounded-lg border border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark p-4 transition-all hover:shadow-md hover:border-primary">
+                            <span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+                            <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">
+                                Resolución de Problemas</h3>
+                        </div>
+                        <div
+                            class="flex flex-1 gap-4 items-center rounded-lg border border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark p-4 transition-all hover:shadow-md hover:border-primary">
+                            <span class="material-symbols-outlined text-primary text-3xl">forum</span>
+                            <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">
+                                Comunicación Efectiva</h3>
+                        </div>
+                        <div
+                            class="flex flex-1 gap-4 items-center rounded-lg border border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark p-4 transition-all hover:shadow-md hover:border-primary">
+                            <span class="material-symbols-outlined text-primary text-3xl">school</span>
+                            <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">
+                                Aprendizaje Continuo</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h2
+                        class="text-2xl font-display font-bold text-text-primary-light dark:text-text-primary-dark pb-3 pt-5">
+                        Enfoque Profesional</h2>
+                    <div
+                        class="p-6 rounded-lg bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700">
+                        <p class="text-base text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+                            Mi filosofía de trabajo se centra en la excelencia técnica y la creación de valor real
+                            para el usuario final. Creo firmemente en la importancia del código limpio, la
+                            arquitectura de software bien estructurada y las pruebas rigurosas como pilares para
+                            construir aplicaciones mantenibles y escalables a largo plazo. Me especializo en el
+                            ecosistema de Django, aprovechando su potencia para desarrollar desde APIs RESTful
+                            eficientes con Django REST Framework hasta aplicaciones web dinámicas y complejas. Mi
+                            objetivo es siempre entregar soluciones que no solo cumplan con los requisitos técnicos,
+                            sino que también ofrezcan una experiencia de usuario intuitiva y satisfactoria.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center p-4 gap-4">
+                    <a class="inline-block px-8 py-3 text-base font-bold text-white bg-primary rounded-full shadow-lg shadow-primary/30 hover:bg-primary/90 transition-transform transform hover:scale-105"
+                        href="#">
+                        Hablemos
+                    </a>
+                    <a class="inline-block px-8 py-3 text-base font-bold text-text-primary-light dark:text-text-primary-dark bg-surface-light dark:bg-surface-dark border border-slate-300 dark:border-slate-600 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-transform transform hover:scale-105"
+                        href="#">
+                        Ver Proyectos
+                    </a>
+                </div>
+                <div class="flex flex-col gap-3 min-w-[288px]">
+                    <p
+                        class="text-2xl font-black font-bold text-text-primary-light dark:text-text-primary-dark pb-3 pt-5">
+                        Tecnologías que Domino</p>
+                    <p class="text-base font-normal leading-normal text-gray-500 dark:text-[#94A3B8]">Estas son algunas
+                        de las
+                        herramientas y tecnologías con las que trabajo diariamente.</p>
+                </div>
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+                    <div
+                        class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-[#334155] bg-white dark:bg-[#1E293B] p-4 items-center justify-center text-center hover:border-primary hover:-translate-y-1 transition-all duration-300 shadow-sm dark:shadow-none">
+                        <img alt="Django logo" class="h-10 w-10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP8cYvXNfQDwoi_yLPr7AfRCBkWie6pss5YOQsX_7j9eyIgsJq5BPRCEOvCi9U1aWCy0Yym_1FxXw9WOba9PiMCOyUX01qkNAeXSTS27S-QbWretszmsK3WR-LREQ0BOftaAx2_Y0oDRbUw2SROwPIPlBVzDkvrYJsqh8KWoZt1RyfbdczLj_E-1e5vKM80ZyLGWKWPSBiNiZW5PvcpA9cafMFbZTIzhAPzAIfq6N29gntT_25G39xb-F7cC70mI-xSFS4peDZKh9o" />
+                        <h2 class="text-base font-bold leading-tight text-gray-800 dark:text-white">Django</h2>
+                    </div>
+                    <div
+                        class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-[#334155] bg-white dark:bg-[#1E293B] p-4 items-center justify-center text-center hover:border-primary hover:-translate-y-1 transition-all duration-300 shadow-sm dark:shadow-none">
+                        <img alt="Python logo" class="h-10 w-10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP6MnExd-K58CZH0C34Vznw-0Mofz47XG23ZaYv8Mq_V6v6C_oujmKvcouKUjY4Bhuh18AWicgFxm7YZ2-YGVNc92v17ow629NkLOJ98fcf2_-nd9sMKniQ3MHmpm4K1nBX8IE8xf2jtdeskjKd_xB1VM2cWrGnTEaulwSgHJBZYt-Z-O15kFjAbJpHrw3vsTVaF2KGEFJ1agBcCe-EJc0Erpt4SsG0dG867M6gqDSYWtbw_BgKs9PHGISGad-2i0pqpf5eEJxEPOS" />
+                        <h2 class="text-base font-bold leading-tight text-gray-800 dark:text-white">Python</h2>
+                    </div>
+                    <div
+                        class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-[#334155] bg-white dark:bg-[#1E293B] p-4 items-center justify-center text-center hover:border-primary hover:-translate-y-1 transition-all duration-300 shadow-sm dark:shadow-none">
+                        <img alt="JavaScript logo" class="h-10 w-10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV-JkZVTqRDyXXHbr7XaI89G8WDuMGfHAVAW7FnHZiQQiiC-SpOrxCuzdAXSP8YbJSsmrIiaINAn-p1u7drX742fDwM-xfhCEFfwKbcaf89f_qllmXEhpnM3avI1vOAXR3kEF5LKkO2ZifmqBwkB4zs4lveMjexjlq938w3zWp1AfkHF-ThQ_P8qH8kxsAmIY8S7N_WhaNZCD7TaZecu-jIavudRbttJZvo5Zr3lNlo1RThj4JLE3mr21zBh7BTjpsTyA38PrHL3xo" />
+                        <h2 class="text-base font-bold leading-tight text-gray-800 dark:text-white">JavaScript</h2>
+                    </div>
+                    <div
+                        class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-[#334155] bg-white dark:bg-[#1E293B] p-4 items-center justify-center text-center hover:border-primary hover:-translate-y-1 transition-all duration-300 shadow-sm dark:shadow-none">
+                        <img alt="Tailwind CSS logo" class="h-10 w-10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD75-2bqNclccGV__Mc7frpWzW-yEJ922HJ6OChJ1sc73qbr5AcpRk46aAI-c-GJhkgokMn5DPGZ8U_NjJwHxMzpiftSOAdLhdfLueGaI9RbTKZeT64kDqN5VGgFHRNZ2wowunnu8BpYfqC6MlilIDSXdWXbAtfbwcBsO5Vd1n5o59aAAKSEsbMl03C-tVKav8GQ8IwEt5xCHMGBT-2jbClIhmRiKXvYuNG32XmonhaEDIIFMcLtoASpS13N-jrgptqfvX-Xjr-mgS4" />
+                        <h2 class="text-base font-bold leading-tight text-gray-800 dark:text-white">TailwindCSS</h2>
+                    </div>
+                    <div
+                        class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-[#334155] bg-white dark:bg-[#1E293B] p-4 items-center justify-center text-center hover:border-primary hover:-translate-y-1 transition-all duration-300 shadow-sm dark:shadow-none">
+                        <img alt="Git logo" class="h-10 w-10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVRtQFn56vtWgnDn2FUEdlr0jYEHai2hGL38TOFYNvqOuigcM6ELDwl6R5zJFAWps_WCF07Hwk1vppMIVHGpAQrgDIJNGDK6vBVttRa8N11nvl9aHVUZkObIjk2ujmRl_30N0e9bYas1V5i7RavxIPLAzzhW_zyJnToNC9DrB9Out8BIZfKi6ug7-8yzYUYmEJdz-WWL9i3RzNkI3icA_qMxyFcWaLCtVN4yRcpUwPvmYW2aXOjlMeJrE7421bc4EzdeGxQchHyeDG" />
+                        <h2 class="text-base font-bold leading-tight text-gray-800 dark:text-white">Git</h2>
+                    </div>
+                    <div
+                        class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-[#334155] bg-white dark:bg-[#1E293B] p-4 items-center justify-center text-center hover:border-primary hover:-translate-y-1 transition-all duration-300 shadow-sm dark:shadow-none">
+                        <img alt="PostgreSQL logo" class="h-10 w-10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzyHYFQfsb1WlfaK2CcsUzBGXCmtydoCm4leTCLcuUIGfBi3XaiQCwLPsV0g2ul2UkIWyxquoojArbfzQpYpFo9jHWJ-cNv2PjGmHTXEVBLbljeJlDj3EOx9xSMSc2s46eaxEi_sO_7QTJrpxHdMvgEgwnYcAKiNEFbhWg5wrJmxRlBXren52QxDhd58oPoFNdVT_afZIRJBEhqRsArGWv-MYJThMk336Gr_Z6PXZ1C27KVzpi8kTGdWi3ptW4FF8Frgt-BBWQDeEd" />
+                        <h2 class="text-base font-bold leading-tight text-gray-800 dark:text-white">PostgreSQL</h2>
+                    </div>
+                    <div
+                        class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-[#334155] bg-white dark:bg-[#1E293B] p-4 items-center justify-center text-center hover:border-primary hover:-translate-y-1 transition-all duration-300 shadow-sm dark:shadow-none">
+                        <img alt="Docker logo" class="h-10 w-10"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnln0SUQ0U4P4NVWelez88mtaRsGHMFZOtaivl6caFQMyADVJujSJN0iAaF7j0P7UlDbTjplcxUEkYpc-2z3FaXqxjzO6Kj3aZG7z-ABoywY40sbiEK3oW9nEeEY9y0hZY9MYGZmJeJlg-eXB7FbYd1TCzvp-Ce8x3VT-wz6Bx4RJFNc7QNDarEm6idftTv6U3QEJxQUyLUcA4aqtguFJY3WQwKMQK_H_U3Yna6KXqQR1u6Hs_wsBAMV1g4hpLczZPfh5H2xWXlZuw" />
+                        <h2 class="text-base font-bold leading-tight text-gray-800 dark:text-white">Mysql</h2>
+                    </div>
+                    <div
+                        class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-[#334155] bg-white dark:bg-[#1E293B] p-4 items-center justify-center text-center hover:border-primary hover:-translate-y-1 transition-all duration-300 shadow-sm dark:shadow-none">
+                        <span class="material-symbols-outlined" style="font-size: 40px; color: #47A248;">api</span>
+                        <h2 class="text-base font-bold leading-tight text-gray-800 dark:text-white">REST APIs</h2>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+    <div class="relative min-h-screen w-full flex flex-col bg-background-light light:bg-transparent overflow-x-hidden">
+
+                <div class="flex-grow flex justify-center py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+                    <div class="w-full max-w-4xl">
+                        <div class="text-center mb-16">
+                            <h2
+                                class="font-display text-4xl sm:text-5xl font-bold text-slate-800 dark:text-slate-100 tracking-tight">
+                                Experiencia Profesional</h2>
+                            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Una línea de tiempo de mi
+                                trayectoria
+                                profesional.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute w-0.5 h-full bg-slate-200 dark:bg-slate-700 left-1/2 -translate-x-1/2">
+                            </div>
+                            <div class="relative flex flex-col gap-y-12">
+                                <div
+                                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                                    <div
+                                        class="flex items-center justify-center w-10 h-10 rounded-full bg-background-light dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 md:order-1 md:translate-x-[-50%] md:left-1/2 md:relative">
+                                        <span class="material-symbols-outlined text-primary">work</span>
+                                    </div>
+                                    <div class="w-[calc(50%-2.5rem)] md:w-[calc(50%-2.5rem)]">
+                                        <div
+                                            class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md hover:shadow-xl hover:border-primary/50 border-2 border-transparent transition-all duration-300 transform group-hover:-translate-y-1">
+                                            <p class="font-display text-xl font-bold text-slate-900 dark:text-white">
+                                                Desarrollador Web Full-Stack</p>
+                                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Tech Solutions
+                                                Inc. |
+                                                Ene
+                                                2021 - Presente</p>
+                                            <p class="mt-3 text-slate-600 dark:text-slate-300">Desarrollo de
+                                                aplicaciones
+                                                web
+                                                complejas utilizando Django y React.</p>
+                                            <ul
+                                                class="mt-4 space-y-2 list-disc list-inside text-slate-600 dark:text-slate-300">
+                                                <li>Lideré el desarrollo del backend para una plataforma SaaS.</li>
+                                                <li>Optimicé las consultas a la base de datos, mejorando el rendimiento
+                                                    en
+                                                    un
+                                                    30%.</li>
+                                                <li>Implementé un sistema de autenticación seguro con Django REST
+                                                    Framework.
+                                                </li>
+                                            </ul>
+                                            <div class="flex items-center gap-4 mt-4">
+                                                <img alt="Django logo" class="h-6 w-6" data-alt="Django logo"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmGFvBhwjU9nsNjOBM9T_K7RiviiMGxYmzk9YtDv2gbGgVEvNfwQDxn_y4nIsvqfrk23rq3jwZTwyScg4ODbZ1GWKS_D7dZ0btp--Tj3E6rXJUVMm-K7BsEjAJdyg67J4d4WTLEVGR2HPOmzi91kIFVNLV9Zm67RJ0GirL2Yt5zP-HochzllCetFSs3psUa8biNBEQ6tl9gbL8uVLfdKV9_JSAhngZl-n6vssrMm6xTtLxwGi9ezPRMH-_LjOF4EJe-w0PDNaGRm38" />
+                                                <img alt="Python logo" class="h-6 w-6" data-alt="Python logo"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNpQ3s4TgyX1VyamcdJ95GkW3qg4vhQ1hT2BU4elEWF939RwSZLY6IpadvfKShsmY_fnhOeISTY0E5xovXqEMTv29Cl9pMR0YyJFb_FqskCE1wiJH6dgoQe1AYLCGiSpq-LWPIPIwslT9WXG2eLgtp3eYaUSQf2dS2oj4EnACNMfFzq5BFfAzRmcty2T-T8GzjblFMHFWYqtmwNEm4Crpq-YeoHWsihrhYhrCbDJ8WcpCqNBSfvFpvQfkNnnrRWuxxwL37CA58a7il" />
+                                                <img alt="React logo" class="h-6 w-6" data-alt="React logo"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-2daR2cf7fHRj7QnPB2I6YPMS6XyA5K5ksjlPRpaQayCHh_KZo2fbqXYGXBDw16vmVz6nSvIN5_a6ARtVHcGs7S5hrGs0NtVmhjIEpAPr19GjwndyKO3FSBob4tET7yruAn8OBbAEsfioF7zo7Bcxg4CYpJAktrapbp76jDvT4j68OXTGqYoFvbpl949cSW59aRUVf_OmKGFpQ6aKo-FA0LfB7IJrntHb3PB0UEdkJTTIezFuMNFFSGChD8_rytnCPLCTEPGpgzbT" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                                    <div
+                                        class="flex items-center justify-center w-10 h-10 rounded-full bg-background-light dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 md:order-1 md:translate-x-[-50%] md:left-1/2 md:relative">
+                                        <span class="material-symbols-outlined text-primary">work</span>
+                                    </div>
+                                    <div class="w-[calc(50%-2.5rem)] md:w-[calc(50%-2.5rem)]">
+                                        <div
+                                            class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md hover:shadow-xl hover:border-primary/50 border-2 border-transparent transition-all duration-300 transform group-hover:-translate-y-1">
+                                            <p class="font-display text-xl font-bold text-slate-900 dark:text-white">
+                                                Desarrollador Django Junior</p>
+                                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Creative Agency |
+                                                Jun
+                                                2019 - Dic 2020</p>
+                                            <p class="mt-3 text-slate-600 dark:text-slate-300">Mantenimiento de sitios
+                                                web
+                                                existentes y creación de nuevas funcionalidades.</p>
+                                            <ul
+                                                class="mt-4 space-y-2 list-disc list-inside text-slate-600 dark:text-slate-300">
+                                                <li>Contribuí al desarrollo de un CMS personalizado.</li>
+                                                <li>Participé en la migración de un proyecto de Django 2.2 a 3.1.</li>
+                                                <li>Desarrollé pruebas unitarias para asegurar la calidad del código.
+                                                </li>
+                                            </ul>
+                                            <div class="flex items-center gap-4 mt-4">
+                                                <img alt="Django logo" class="h-6 w-6" data-alt="Django logo"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvk8sv8ozHml6A5b6a1zZub4TLe2i33iTWfRTW1c7UbqyrsK4Cd3xl0Z-6R8w_vYcfjYbMqrRc6SpSgC_vvFYXvGip6s5jLw1NIw4pzgWzrvZeYlVjZJoUJStH4tnxOiJekfAovBDZymM5KanaNccJkzXkGFwhWttXAb3IJTvPuqcK_xEPfRj1SC3r5gPTdN644wFR3iVCBVR2xkmdePJdp-8wT1umTkO86JG3Z3qwK239IzB40iVzQZqByvlfZBoPr8FjdmpEF9ls" />
+                                                <img alt="Python logo" class="h-6 w-6" data-alt="Python logo"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC481jsh08poAIK8cCgq4VKGFPcnnCKM0iJ26Ob7KIG88di7aCZz6-ZC_P6e-Rs-cyAbHXCY1EqKsy2dKKFAKbhVYGnBvSiHMPzFlGbD6kkxNE9NjcmpoI4aQ1PC2wrAGg-vMrxeNiZrJ3gveFf-7mFL7mptGJKVNSFMM5kpDB2C26REz4_MrYxPN_ChWWd77D6oLPIsCtOwrU7zxUg1x999gsq9eqsjExq6Ry4zS5fU09f9YwgKREecpsLvxafo-tp_t0lz2yTKTtO" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                                    <div
+                                        class="flex items-center justify-center w-10 h-10 rounded-full bg-background-light dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 md:order-1 md:translate-x-[-50%] md:left-1/2 md:relative">
+                                        <span class="material-symbols-outlined text-primary">school</span>
+                                    </div>
+                                    <div class="w-[calc(50%-2.5rem)] md:w-[calc(50%-2.5rem)]">
+                                        <div
+                                            class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md hover:shadow-xl hover:border-primary/50 border-2 border-transparent transition-all duration-300 transform group-hover:-translate-y-1">
+                                            <p class="font-display text-xl font-bold text-slate-900 dark:text-white">
+                                                Pasante
+                                                de
+                                                Desarrollo Web</p>
+                                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Web Innovators |
+                                                Ene
+                                                2019
+                                                - May 2019</p>
+                                            <p class="mt-3 text-slate-600 dark:text-slate-300">Asistencia en desarrollo
+                                                y
+                                                mantenimiento de aplicaciones web.</p>
+                                            <ul
+                                                class="mt-4 space-y-2 list-disc list-inside text-slate-600 dark:text-slate-300">
+                                                <li>Aprendí las mejores prácticas de la industria.</li>
+                                                <li>Colaboré con el equipo de diseño para implementar interfaces de
+                                                    usuario.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+
+            themeToggle.addEventListener('click', () => {
+                html.classList.toggle('dark');
+            });
+        });
+    </script>
+</body>
+
+</html>
